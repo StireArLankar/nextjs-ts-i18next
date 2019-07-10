@@ -1,0 +1,18 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-standard"],
+  "rules": {
+    "jsx-wrap-multiline": true,
+    "jsx-alignment": false,
+    "jsx-no-multiline-js": false,
+    "no-var-requires": false,
+    "ordered-imports": false,
+    "trailing-comma": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.{ts,tsx,js}",
+      "node_modules/**/*",
+      "coverage/**/*.{js,ts,tsx}"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+/* eslint-disable */
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "baseUrl": "./",
+    "paths": {
+      "Src/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
