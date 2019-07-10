@@ -35,12 +35,9 @@
       "./node_modules/@types"
     ],
     "paths": {
-      "Src/*": [
-        "*"
-      ],
-      "*": [
-        "types/*"
-      ]
+      "Src/*": ["*"],
+      "*": ["types/*"],
+      "Components/*" : ["components/*"]
     }
   },
   "exclude": [
@@ -55,6 +52,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "server/index.js"
+    "**/*.tsx",
+    "server/index.js"
   ]
 }

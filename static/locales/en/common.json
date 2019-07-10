@@ -1,6 +1,11 @@
 {
-  "hello": "hello",
-  "home": "home",
-  "second": "second",
-  "third": "third"
+  "hello": "Hello",
+  "home": "Home",
+  "second": "Second",
+  "third": "Third",
+  "name": "Name",
+  "name-placeholder": "Enter your name...",
+  "name-small": "We'll never share your name with anyone else.",
+  "submit": "Submit",
+  "your-name": "Your name"
 }

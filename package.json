@@ -10,6 +10,7 @@
   "author": "Stire",
   "license": "ISC",
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/express": "^4.17.0",
     "@types/node": "^12.6.2",
     "@types/react": "^16.8.23",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "express": "^4.17.1",
     "next": "^9.0.0",
     "next-i18next": "^0.45.0",

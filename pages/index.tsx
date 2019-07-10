@@ -6,7 +6,9 @@ import styles from 'Src/styles/main.scss'
 const Home = (props: WithTranslation) => {
   return (
     <Fragment>
-      <div className={styles.wrapper}>{props.t('hello')}</div>
+      <div className={styles.wrapper}>
+        <h1>{props.t('home')}</h1>
+      </div>
     </Fragment>
   )
 }

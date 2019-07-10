@@ -2,7 +2,9 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import { appWithTranslation } from '../i18n'
 import AppContext from 'Src/context/app-context'
-import Layout from 'Src/components/layout'
+import Layout from 'Components/layout'
+import Head from 'Components/head'
+import 'Src/styles/index.scss'
 
 class MyApp extends App {
   public static async getInitialProps (newProps: any) {
@@ -16,7 +18,7 @@ class MyApp extends App {
   }
 
   public state = {
-    name: 'Max'
+    name: 'Unknown'
   }
 
   public updateState = (newState: object) => {
@@ -31,7 +33,10 @@ class MyApp extends App {
       <Container>
         <AppContext.Provider value={{ ...this.state, updateState }}>
           <Layout>
-            <Component {...pageProps} />
+            <Head />
+            <main className='p-2 card'>
+              <Component {...pageProps} />
+            </main>
           </Layout>
         </AppContext.Provider>
       </Container>

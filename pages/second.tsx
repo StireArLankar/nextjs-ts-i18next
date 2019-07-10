@@ -3,7 +3,9 @@ import React, { Fragment } from 'react'
 const Second = () => {
   return (
     <Fragment>
-      <div>hello world</div>
+      <div>
+        <h1>Second</h1>
+      </div>
     </Fragment>
   )
 }
