@@ -1,0 +1,12 @@
+/node_modules/
+.next
+build/
+tmp/
+.idea/
+.vscode/
+Data.fs*
+*.sublime-project
+*.sublime-workspace
+.*.sw?
+.sw?
+.DS_Store
