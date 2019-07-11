@@ -1,6 +1,8 @@
 import App, { Container } from 'next/app'
 import React from 'react'
-import { appWithTranslation } from '../i18n'
+import { PageTransition } from 'next-page-transitions'
+import { withRouter } from 'next/router'
+import { appWithTranslation } from 'Src/i18n'
 import AppContext from 'Src/context/app-context'
 import Layout from 'Components/layout'
 import Head from 'Components/head'
@@ -35,7 +37,25 @@ class MyApp extends App {
           <Layout>
             <Head />
             <main className='p-2 card'>
-              <Component {...pageProps} />
+              <PageTransition timeout={300} classNames='page-transition'>
+                <Component {...pageProps} key={this.props.router.route}/>
+              </PageTransition>
+              <style jsx={true} global={true}>{`
+                .page-transition-enter {
+                  opacity: 0;
+                }
+                .page-transition-enter-active {
+                  opacity: 1;
+                  transition: opacity 300ms;
+                }
+                .page-transition-exit {
+                  opacity: 1;
+                }
+                .page-transition-exit-active {
+                  opacity: 0;
+                  transition: opacity 300ms;
+                }
+              `}</style>
             </main>
           </Layout>
         </AppContext.Provider>
@@ -44,4 +64,4 @@ class MyApp extends App {
   }
 }
 
-export default appWithTranslation(MyApp)
+export default withRouter(appWithTranslation(MyApp))

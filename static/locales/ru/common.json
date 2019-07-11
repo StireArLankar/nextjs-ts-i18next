@@ -7,5 +7,8 @@
   "name-placeholder": "Введите ваше имя ...",
   "name-small": "Мы никому не расскажем ваше имя.",
   "submit": "Отправить",
-  "your-name": "Ваше имя"
+  "your-name": "Ваше имя",
+  "language": "Язык",
+  "language-ru": "Русский",
+  "language-en": "Английский"
 }
